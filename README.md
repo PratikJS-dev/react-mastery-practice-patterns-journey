@@ -27,10 +27,14 @@ It focuses on building strong fundamentals, reusable patterns, and scalable fron
 ## 📂 Structure
 
 ```
-day-01-basics
-day-02-components
-day-03-hooks
-day-04-forms
+ React Basics & JSX
+ Components & Props
+ State & Lifecycle
+ Hooks (useState, useEffect, custom hooks)
+ Conditional Rendering
+ Forms & Validation
+ API Integration
+ Performance Optimization
 ...
 ```
 
