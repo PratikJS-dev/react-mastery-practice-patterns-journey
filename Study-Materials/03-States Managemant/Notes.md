@@ -2,7 +2,7 @@
 
 ---
 
-# 📌 What is State?
+## 📌 What is State?
 
 State is a **built-in object** in React that stores **component-specific, mutable data**.
 
@@ -10,7 +10,7 @@ When the state changes, the component **re-renders automatically**.
 
 ---
 
-# 🎯 Why State Management?
+## 🎯 Why State Management?
 
 - Handle dynamic data  
 - Control UI behavior  
@@ -18,7 +18,7 @@ When the state changes, the component **re-renders automatically**.
 
 ---
 
-# ⭐ Key Points
+## ⭐ Key Points
 
 - State is local to a component  
 - State changes trigger re-render  
@@ -26,7 +26,7 @@ When the state changes, the component **re-renders automatically**.
 
 ---
 
-# 🎯 State Management – Interview Questions & Answers
+## 🎯 State Management – Interview Questions & Answers
 
 **Q1. What is state in React?**  
 A: State is an object that holds dynamic data for a component.
@@ -53,19 +53,19 @@ A: Yes, by lifting state up or using global state.
 
 ---
 
-## 🧾 Syntax
+# 🧾 Syntax
 
 ```js
 const [count, setCount] = useState(0);
 ```
 
 ---
-## ⚙️ How useState Works
+# ⚙️ How useState Works
 - Returns current state value
 - Returns a function to update state
 - Updating state triggers re-render
 
-# 🎯 useState – Interview Questions & Answers
+## 🎯 useState – Interview Questions & Answers
 
 **Q1. What does useState return?**
 A: An array with state value and setter function.
@@ -79,26 +79,26 @@ A: No, state updates are asynchronous.
 **Q4. Why use functional update in useState?**
 A: To safely update based on previous state.
 
-💻 Example (Functional Update)
+## 💻 Example (Functional Update)
 ```js
 setCount(prev => prev + 1);
 ```
-## 🏛️ setState (Class Components)
+# 🏛️ setState (Class Components)
 
-# 📌 What is setState?
+## 📌 What is setState?
 
 - setState is a method used in class components to update state.
 
-💻 Example
+##💻 Example
 ```js
 this.setState({ count: this.state.count + 1 });
 ```
-# ⚠️ Important Rules
+## ⚠️ Important Rules
 - setState is asynchronous
 - Do not mutate state directly
 - Can accept a callback function
 
-# 💻 Example (Functional setState)
+## 💻 Example (Functional setState)
 ```js
 this.setState(
   prevState => ({ count: prevState.count + 1 }),
@@ -106,7 +106,7 @@ this.setState(
 );
 ```
 
-# 🎯 setState – Interview Questions & Answers
+## 🎯 setState – Interview Questions & Answers
 
 **Q1. Why is setState asynchronous?**
 A: To improve performance by batching updates.
@@ -126,7 +126,7 @@ A: setState is for class components, useState is for functional components.
 
 ---
 
-# 📊 Differences Between State and Props
+## 📊 Differences Between State and Props
 
 | Feature        | State                              | Props                              |
 |----------------|-----------------------------------|------------------------------------|
@@ -138,7 +138,7 @@ A: setState is for class components, useState is for functional components.
 
 ---
 
-# 🎯 State vs Props – Interview Questions & Answers
+## 🎯 State vs Props – Interview Questions & Answers
 
 **Q1. What is the main difference between state and props?**  
 A: State is internal and mutable, while props are external and read-only.
@@ -154,7 +154,7 @@ A: No.
 
 ---
 
-# 🎯 Common Interview Scenario Questions
+## 🎯 Common Interview Scenario Questions
 
 **Q1. When should you lift state up?**  
 A: When multiple components need shared state.
@@ -167,7 +167,7 @@ A: Use memoization (React.memo, useMemo, useCallback) and proper state updates.
 
 ---
 
-# 🧠 Quick Revision
+## 🧠 Quick Revision
 
 - State = internal & mutable  
 - Props = external & read-only  
