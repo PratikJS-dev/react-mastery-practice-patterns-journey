@@ -34,7 +34,7 @@ A: State is an object that holds dynamic data for a component.
 **Q2. Why do we need state?**  
 A: To manage data that changes over time.
 
-**Q3. What happens when state updates?**  
+**Q3. What happens when state updates?**    
 A: React re-renders the component.
 
 **Q4. Can state be shared between components?**  
@@ -67,16 +67,16 @@ const [count, setCount] = useState(0);
 
 ## 🎯 useState – Interview Questions & Answers
 
-**Q1. What does useState return?**
+**Q1. What does useState return?**  
 A: An array with state value and setter function.
 
-**Q2. Can we use multiple useState hooks?**
+**Q2. Can we use multiple useState hooks?**  
 A: Yes, multiple times in the same component.
 
-**Q3. Is useState synchronous?**
+**Q3. Is useState synchronous?**  
 A: No, state updates are asynchronous.
 
-**Q4. Why use functional update in useState?**
+**Q4. Why use functional update in useState?**  
 A: To safely update based on previous state.
 
 ## 💻 Example (Functional Update)
@@ -108,16 +108,16 @@ this.setState(
 
 ## 🎯 setState – Interview Questions & Answers
 
-**Q1. Why is setState asynchronous?**
+**Q1. Why is setState asynchronous?**  
 A: To improve performance by batching updates.
 
-**Q2. Can we update state directly?**
+**Q2. Can we update state directly?**  
 A: No, it can cause unpredictable behavior.
 
-**Q3. What is batching?**
+**Q3. What is batching?**  
 A: Grouping multiple state updates into one re-render.
 
-**Q4. Difference between setState and useState?**
+**Q4. Difference between setState and useState?** 
 A: setState is for class components, useState is for functional components.
 
 
@@ -143,7 +143,7 @@ A: setState is for class components, useState is for functional components.
 **Q1. What is the main difference between state and props?**  
 A: State is internal and mutable, while props are external and read-only.
 
-**Q2. Can props change?**  
+**Q2. Can props change?** 
 A: Yes, when the parent component updates.
 
 **Q3. Can state be passed as props?**  
