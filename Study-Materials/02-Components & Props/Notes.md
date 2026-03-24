@@ -27,9 +27,9 @@ Every React application is built using components.
 
 ---
 
-# 🎯 Components – Interview Questions & Answers
+#@ 🎯 Components – Interview Questions & Answers
 
-**Q1. What is a component in React?**  
+**Q1. What is a component in React?**   
 A: A reusable UI block that returns JSX.
 
 **Q2. Why are components important?**  
@@ -60,25 +60,23 @@ function Welcome() {
 }
 ```
 ---
-# 🎯 Functional Components – Interview Questions & Answers
+## 🎯 Functional Components – Interview Questions & Answers
 
-**Q1. What is a functional component?**
+**Q1. What is a functional component?**  
 A: A JavaScript function that returns JSX.
 
-**Q2. Why functional components are preferred?**
+**Q2. Why functional components are preferred?**  
 A: They are simpler and support hooks.
 
-**Q3. Can functional components use state?**
+**Q3. Can functional components use state?**  
 A: Yes, using hooks like useState.
 
-**Q4. Do functional components have lifecycle methods?**
+**Q4. Do functional components have lifecycle methods?**  
 A: No, but hooks like useEffect handle lifecycle behavior.
 
 ---
 ---
 # 🧩 Class Components
-
----
 
 # ⚛️ CLASS COMPONENTS
 
@@ -99,16 +97,16 @@ class Welcome extends React.Component {
 ``` 
 # 🎯 Class Components – Interview Questions & Answers
 
-**Q1. What is a class component?**
+**Q1. What is a class component?**  
 A: A component created using ES6 class syntax.
 
-**Q2. Why are class components less used now?**
+**Q2. Why are class components less used now?**  
 A: Functional components with hooks provide the same features with less complexity.
 
-**Q3. What is render() method?**
+**Q3. What is render() method?**  
 A: It returns JSX for the component UI.
 
-**Q4. Can class components use hooks?**
+**Q4. Can class components use hooks?**  
 A: No, hooks are only for functional components.
 
 ---
@@ -132,17 +130,17 @@ function Welcome(props) {
 
 # 🎯 Props – Interview Questions & Answers
 
-**Q1. What are props?**
+**Q1. What are props?**  
 A: Inputs passed to components to customize behavior.
 
-**Q2. Can props be modified?**
+**Q2. Can props be modified?**  
 A: No, props are read-only.
 
-**Q3. How do you pass props?**
+**Q3. How do you pass props?**  
 A: Using attributes in JSX.
 
-**Q4. What is props drilling?**
+**Q4. What is props drilling?**  
 A: Passing props through multiple components.
 
-**Q5. Difference between props and state?**
+**Q5. Difference between props and state?**  
 A: Props are external and read-only, state is internal and mutable.
