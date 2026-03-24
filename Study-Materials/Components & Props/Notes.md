@@ -113,3 +113,36 @@ A: No, hooks are only for functional components.
 
 ---
 ---
+
+## 📦 PROPS
+# 📌 What are Props?
+
+Props (properties) are read-only inputs passed from parent to child components.
+
+💻 Example
+```js
+function Welcome(props) {
+  return <h1>Hello {props.name}</h1>;
+}
+```
+# ⭐ Props Characteristics
+- Immutable (read-only)
+- Passed from parent to child
+- Help make components dynamic
+
+# 🎯 Props – Interview Questions & Answers
+
+**Q1. What are props?**
+A: Inputs passed to components to customize behavior.
+
+**Q2. Can props be modified?**
+A: No, props are read-only.
+
+**Q3. How do you pass props?**
+A: Using attributes in JSX.
+
+**Q4. What is props drilling?**
+A: Passing props through multiple components.
+
+**Q5. Difference between props and state?**
+A: Props are external and read-only, state is internal and mutable.
