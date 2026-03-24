@@ -122,7 +122,6 @@ A: setState is for class components, useState is for functional components.
 
 
 ---
-===
 # 🔄 State vs Props
 
 ---
