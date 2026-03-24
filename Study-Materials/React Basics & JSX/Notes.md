@@ -135,6 +135,7 @@ A: Yes, using curly braces {}.
 **Q5. What happens to JSX in the browser?**
 A: It is compiled to JavaScript using Babel.
 
+---
 
 # ⚙️ React Project Setup
 
