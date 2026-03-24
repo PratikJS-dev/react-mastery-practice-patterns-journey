@@ -70,14 +70,14 @@ for (let key in obj) {
 
 ## 🎯 Interview Questions & Answers
 
-**Q1. Difference between for...in and for...of?**
+**Q1. Difference between for...in and for...of?**  
 A: for...in iterates over keys/indexes, while for...of iterates over values.
 
-**Q2. When should you use a while loop?**
+**Q2. When should you use a while loop?**  
 A: When the number of iterations is not known in advance.
 
-**Q3. Does for...of work with objects?**
+**Q3. Does for...of work with objects?**  
 A: No, it works with iterable objects like arrays and strings.
 
-**Q4. What is an infinite loop?**
+**Q4. What is an infinite loop?**  
 A: A loop that never terminates because its condition always remains true.
