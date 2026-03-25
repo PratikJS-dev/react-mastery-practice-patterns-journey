@@ -9,7 +9,6 @@
 This repository is dedicated to mastering React through hands-on practice and real-world examples.
 It focuses on building strong fundamentals, reusable patterns, and scalable frontend architecture.
 
----
 
 ## 🧠 Topics Covered
 
@@ -22,7 +21,6 @@ It focuses on building strong fundamentals, reusable patterns, and scalable fron
 * API Integration
 * Performance Optimization
 
----
 
 ## 📂 Structure
 
@@ -44,7 +42,6 @@ Each folder includes:
 * 💻 Code examples
 * ✅ Practice tasks
 
----
 
 ## 🛠 Tech Stack
 
@@ -52,7 +49,6 @@ Each folder includes:
 * JavaScript / TypeScript
 * Vite / Create React App
 
----
 
 ## ▶️ How to Run
 
@@ -61,13 +57,11 @@ npm install
 npm run dev
 ```
 
----
 
 ## 🎯 Goal
 
 To build a strong React foundation and write clean, scalable, and maintainable UI code.
 
----
 
 ## 📌 Future Improvements
 
