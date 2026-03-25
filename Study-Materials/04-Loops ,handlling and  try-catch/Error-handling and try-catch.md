@@ -8,7 +8,7 @@
 - Prevents application crashes  
 - Improves user experience  
 
----
+
 
 # ❗ Types of Errors
 
@@ -16,7 +16,6 @@
 - Runtime Errors → Errors during execution  
 - Logical Errors → Incorrect logic, no crash  
 
----
 
 # ⚙️ Error Handling in JavaScript
 
@@ -25,7 +24,7 @@ JavaScript provides:
 - catch  
 - finally  
 
----
+
 
 # 🎯 Error Handling – Interview Questions & Answers
 
@@ -48,7 +47,6 @@ A: Yes, runtime errors can be handled using try...catch.
 - `catch` block handles the error  
 - `finally` block executes whether an error occurs or not  
 
----
 
 ## 💻 Example
 
@@ -63,7 +61,6 @@ try {
 ```
 
 
----
 ## 🎯 Try...Catch – Interview Questions & Answers
 
 **Q1. What is the purpose of try...catch?**  
