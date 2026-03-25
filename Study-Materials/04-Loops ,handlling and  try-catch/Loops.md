@@ -8,7 +8,7 @@
 - Iteration means **repeating a set of instructions**  
 - Loops help **reduce repetitive code**
 
----
+
 
 ## 🔄 Types of Loops in JavaScript
 
@@ -18,7 +18,6 @@
 - for...in loop  
 - for...of loop  
 
----
 
 ## 💻 Examples
 
@@ -58,7 +57,7 @@ for (let key in obj) {
   console.log(key);
 }
 ```
----
+
 ## 📊 for...in vs for...of
 | Feature       | for...in       | for...of                   |
 | ------------- | -------------- | -------------------------- |
@@ -66,7 +65,7 @@ for (let key in obj) {
 | Used for      | Objects        | Arrays, Strings, Iterables |
 | Output        | Key names      | Actual values              |
 
----
+
 
 ## 🎯 Interview Questions & Answers
 
