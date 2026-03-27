@@ -2,21 +2,20 @@
 
 ---
 
-# 📌 COMPONENTS
+## 📌 COMPONENTS
 
-## What is a Component?
+### What is a Component?
 
 A component is a **reusable, independent piece of UI** in React.  
 Every React application is built using components.
 
----
+
 
 ## 🔹 Types of Components
 
 - Functional Components  
 - Class Components  
 
----
 
 ## ⭐ Benefits of Components
 
@@ -25,9 +24,7 @@ Every React application is built using components.
 - Easy maintenance  
 - Faster development  
 
----
-
-#@ 🎯 Components – Interview Questions & Answers
+### 🎯 Components – Interview Questions & Answers
 
 **Q1. What is a component in React?**   
 A: A reusable UI block that returns JSX.
@@ -42,15 +39,12 @@ A: No, it must return a single parent element (or Fragment).
 A: A component that can be used multiple times with different data.
 
 ---
----
 
-# ⚛️ FUNCTIONAL COMPONENTS
+## ⚛️ FUNCTIONAL COMPONENTS
 
-## 📌 What is a Functional Component?
+### 📌 What is a Functional Component?
 
 A functional component is a **JavaScript function** that returns JSX.
-
----
 
 ## 💻 Example
 
@@ -59,7 +53,7 @@ function Welcome() {
   return <h1>Hello React</h1>;
 }
 ```
----
+
 ## 🎯 Functional Components – Interview Questions & Answers
 
 **Q1. What is a functional component?**  
@@ -75,16 +69,11 @@ A: Yes, using hooks like useState.
 A: No, but hooks like useEffect handle lifecycle behavior.
 
 ---
----
-# 🧩 Class Components
+## ⚛️ CLASS COMPONENTS
 
-# ⚛️ CLASS COMPONENTS
-
-## 📌 What is a Class Component?
+### 📌 What is a Class Component?
 
 A class component is a **JavaScript class** that extends `React.Component`.
-
----
 
 ## 💻 Example
 
@@ -95,7 +84,7 @@ class Welcome extends React.Component {
   }
 }
 ``` 
-# 🎯 Class Components – Interview Questions & Answers
+### 🎯 Class Components – Interview Questions & Answers
 
 **Q1. What is a class component?**  
 A: A component created using ES6 class syntax.
@@ -110,25 +99,23 @@ A: It returns JSX for the component UI.
 A: No, hooks are only for functional components.
 
 ---
----
-
 ## 📦 PROPS
-# 📌 What are Props?
+### 📌 What are Props?
 
 Props (properties) are read-only inputs passed from parent to child components.
 
-💻 Example
+## 💻 Example
 ```js
 function Welcome(props) {
   return <h1>Hello {props.name}</h1>;
 }
 ```
-# ⭐ Props Characteristics
+## ⭐ Props Characteristics
 - Immutable (read-only)
 - Passed from parent to child
 - Help make components dynamic
 
-# 🎯 Props – Interview Questions & Answers
+### 🎯 Props – Interview Questions & Answers
 
 **Q1. What are props?**  
 A: Inputs passed to components to customize behavior.
