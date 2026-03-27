@@ -2,13 +2,13 @@
 
 ---
 
-# 📌 What is React?
+## 📌 What is React?
 
 React is an open-source JavaScript library developed by Facebook for building fast, interactive user interfaces, especially Single Page Applications (SPAs). It follows a component-based architecture.
 
----
 
-# ⭐ Key Features
+
+## ⭐ Key Features
 
 - Component-based architecture  
 - Declarative UI  
@@ -17,9 +17,9 @@ React is an open-source JavaScript library developed by Facebook for building fa
 - Reusable components  
 - Strong community support  
 
----
 
-# ✅ Advantages of React
+
+## ✅ Advantages of React
 
 - High performance  
 - Reusable UI components  
@@ -27,9 +27,9 @@ React is an open-source JavaScript library developed by Facebook for building fa
 - SEO-friendly (with SSR)  
 - Backed by Meta (Facebook)  
 
----
 
-# ⚠️ Limitations
+
+## ⚠️ Limitations
 
 - Learning curve for beginners  
 - Frequent updates  
@@ -37,7 +37,7 @@ React is an open-source JavaScript library developed by Facebook for building fa
 
 ---
 
-# 🎯 React Interview Questions & Answers
+### 🎯 React Interview Questions & Answers
 
 **Q1. What is React?**  
 A: React is a JavaScript library used to build user interfaces using reusable components and a virtual DOM.
@@ -62,7 +62,7 @@ A: For better performance, reusable components, and maintainable UI code.
 
 The Virtual DOM is a lightweight JavaScript representation of the real DOM. React updates the Virtual DOM first and then efficiently updates only the changed parts of the real DOM.
 
----
+
 
 ## ⚙️ How Virtual DOM Works
 
@@ -71,7 +71,7 @@ The Virtual DOM is a lightweight JavaScript representation of the real DOM. Reac
 - Diffing algorithm compares old and new VDOM  
 - React updates only changed nodes in real DOM  
 
----
+
 
 ## ✅ Benefits
 
@@ -79,9 +79,8 @@ The Virtual DOM is a lightweight JavaScript representation of the real DOM. Reac
 - Faster UI updates  
 - Reduced direct DOM manipulation  
 
----
 
-## 🎯 Virtual DOM Interview Questions
+### 🎯 Virtual DOM Interview Questions
 
 **Q1. What is Virtual DOM?**  
 A: A virtual copy of the real DOM used to optimize updates.
@@ -118,7 +117,7 @@ const element = <h1>Hello React</h1>;
 - Use className instead of class
 - JavaScript expressions use {}
 
-# 🎯 JSX Interview Questions
+### 🎯 JSX Interview Questions
 
 **Q1. What is JSX?**
 A: JSX is a syntax extension that allows HTML in JavaScript.
