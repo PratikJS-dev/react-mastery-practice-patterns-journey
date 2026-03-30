@@ -2,22 +2,19 @@
 
 ---
 
-# 📌 What are Hooks?
+## 📌 What are Hooks?
 
 Hooks are special functions introduced in React 16.8 that allow **functional components to use state and lifecycle features** without using class components.
 
----
-
-# 🎯 Why Hooks?
+## 🎯 Why Hooks?
 
 - Avoid class components  
 - Reuse logic easily  
 - Cleaner and readable code  
 - Better separation of concerns  
 
----
 
-# 📏 Rules of Hooks
+## 📏 Rules of Hooks
 
 - Call hooks only at the **top level**  
 - Call hooks only inside **React functions**  
@@ -25,7 +22,7 @@ Hooks are special functions introduced in React 16.8 that allow **functional com
 
 ---
 
-# 🎯 Hooks Overview – Interview Questions & Answers
+### 🎯 Hooks Overview – Interview Questions & Answers
 
 **Q1. What are hooks in React?**  
 A: Functions that allow functional components to use state and lifecycle features.
