@@ -49,10 +49,19 @@ const [count, setCount] = useState(0);
 ```
 
 ## 2. useEffect
-
 Used to handle side effects (API calls, subscriptions, etc.)
 ```js
 useEffect(() => {
   console.log("Component mounted");
 }, []);
+```
+## 3. useRef
+Used to store mutable values or access DOM elements.
+```js
+const inputRef = useRef(null);
+```
+## 4. useContext
+Used to access global state without prop drilling.
+```js
+const value = useContext(MyContext);
 ```
