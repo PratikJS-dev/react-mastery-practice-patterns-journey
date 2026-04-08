@@ -4,7 +4,6 @@
 
 `useState` lets you **add state to functional components**.
 
----
 
 ## ✅ Syntax
 
@@ -12,7 +11,6 @@
 const [state, setState] = useState(initialValue);
 ```
 
----
 
 ## 📌 Example: Counter
 
@@ -31,15 +29,13 @@ function Counter() {
 }
 ```
 
----
-
 ## 💡 Key Points
 
 * `useState` returns **array → [value, setter]**
 * Updating state **re-renders component**
 * State updates are **asynchronous**
 
----
+
 
 ## ⚠️ Common Mistake
 
@@ -67,7 +63,6 @@ Handles **side effects** like:
 * Timers
 * DOM updates
 
----
 
 ## ✅ Syntax
 
@@ -81,8 +76,6 @@ useEffect(() => {
 }, [dependencies]);
 ```
 
----
-
 ## 📌 Example: Run Once (like `componentDidMount`)
 
 ```jsx
@@ -90,9 +83,6 @@ useEffect(() => {
   console.log("Component Mounted");
 }, []);
 ```
-
----
-
 ## 📌 Example: Run on State Change
 
 ```jsx
@@ -100,8 +90,6 @@ useEffect(() => {
   console.log("Count changed:", count);
 }, [count]);
 ```
-
----
 
 ## 📌 Example: Cleanup (important for interviews)
 
@@ -136,28 +124,22 @@ useEffect(() => {
 **Answer:**
 A Hook used to manage state in functional components.
 
----
 
 ## 2. What is `useEffect`?
 
 **Answer:**
 A Hook used to handle side effects like API calls, subscriptions, and timers.
 
----
-
 ## 3. What happens if dependency array is empty?
 
 **Answer:**
 Effect runs only once after initial render.
 
----
 
 ## 4. What is cleanup function?
 
 **Answer:**
 A function returned from `useEffect` to clean resources (e.g., timers, listeners).
-
----
 
 ## 5. Difference between `useEffect` and lifecycle methods?
 
@@ -168,14 +150,12 @@ A function returned from `useEffect` to clean resources (e.g., timers, listeners
 * `componentDidUpdate`
 * `componentWillUnmount`
 
----
 
 ## 6. Can we use multiple `useEffect`?
 
 **Answer:**
 Yes, and it's recommended to separate concerns.
 
----
 
 # 🔹 Coding Interview Questions
 
@@ -199,7 +179,6 @@ function AutoCounter() {
 }
 ```
 
----
 
 ## 🧩 2. Fetch Data from API
 
@@ -223,7 +202,6 @@ function Users() {
 }
 ```
 
----
 
 ## 🧩 3. Toggle Title (DOM Side Effect)
 
@@ -240,6 +218,170 @@ function TitleToggle() {
   return <button onClick={() => setCount(count + 1)}>Click</button>;
 }
 ```
+---
+
+# 🔥 4. Hooks – Advanced (`useState`, `useEffect`)
+
+## ❓ Q1: Why is `useState` asynchronous?
+
+**Answer:**
+React batches state updates for performance optimization.
+
+
+
+## ❓ Q2: What is stale state in `useState`?
+
+**Answer:**
+When state updates use an outdated value.
+
+❌ Problem:
+
+```js
+setCount(count + 1);
+```
+
+✔ Fix:
+
+```js
+setCount(prev => prev + 1);
+```
+
+
+
+## ❓ Q3: How does React decide when to re-run `useEffect`?
+
+**Answer:**
+It compares dependency array values using **shallow comparison**.
+
+---
+
+## ❓ Q4: What happens if dependency array is missing?
+
+**Answer:**
+`useEffect` runs on **every render**, which may cause performance issues.
+
+
+
+## ❓ Q5: Can `useEffect` cause infinite loops?
+
+**Answer:**
+Yes.
+
+❌ Example:
+
+```js
+useEffect(() => {
+  setCount(count + 1);
+}, [count]);
+```
+
+👉 This keeps updating forever.
+
+
+## ❓ Q6: What is cleanup in `useEffect` and why important?
+
+**Answer:**
+Used to prevent memory leaks.
+
+✔ Example:
+
+```js
+useEffect(() => {
+  const id = setInterval(() => {}, 1000);
+
+  return () => clearInterval(id);
+}, []);
+```
+
+
+
+## ❓ Q7: Difference between `useEffect` and `useLayoutEffect`?
+
+**Answer:**
+
+| useEffect        | useLayoutEffect   |
+| ---------------- | ----------------- |
+| Runs after paint | Runs before paint |
+| Non-blocking     | Blocking          |
+| Preferred        | Rare use cases    |
+
+
+## ❓ Q8: Why shouldn’t we use `useEffect` for everything?
+
+**Answer:**
+It can:
+
+* Reduce performance
+* Create unnecessary re-renders
+* Make logic harder to follow
+
+👉 Use only for **side effects**
+
+
+# 🔥 5. Coding-Based Advanced Questions
+
+## 🧩 Q9: Build a custom counter with safe updates
+
+```jsx
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(prev => prev + 1);
+  };
+
+  return <button onClick={increment}>{count}</button>;
+}
+```
+
+---
+
+## 🧩 Q10: Prevent API call on every render
+
+```jsx
+useEffect(() => {
+  fetchData();
+}, []); // only once
+```
+
+---
+
+## 🧩 Q11: Debounced Search (Important)
+
+```jsx
+import { useState, useEffect } from "react";
+
+function Search() {
+  const [query, setQuery] = useState("");
+  const [debounced, setDebounced] = useState(query);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebounced(query);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [query]);
+
+  return <input onChange={e => setQuery(e.target.value)} />;
+}
+```
+
+---
+
+# 🔥 Pro-Level Interview Tip
+
+If interviewer asks:
+👉 *“What are common mistakes with hooks?”*
+
+✔ Strong Answer:
+
+* Missing dependencies in `useEffect`
+* Infinite loops
+* Mutating state
+* Overusing `useEffect`
+* Not using functional updates
+
 
 ---
 
