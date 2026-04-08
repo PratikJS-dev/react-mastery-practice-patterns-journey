@@ -193,6 +193,106 @@ To break UI into reusable, manageable pieces.
 **Answer:**
 Updating UI when state/props change.
 
+--- 
 
-* **Advanced React interview Q&A (hooks, lifecycle, performance)**
-* OR **Real company-level coding questions (React + JS combined)** 🚀
+# 🔥 1. JSX – Advanced Questions
+
+## ❓ Q1: How does JSX work behind the scenes?
+
+**Answer:**
+JSX is syntactic sugar. It gets converted into:
+
+```js
+React.createElement(type, props, children)
+```
+
+Example:
+
+```jsx
+const el = <h1>Hello</h1>;
+```
+
+Becomes:
+
+```js
+const el = React.createElement("h1", null, "Hello");
+```
+
+👉 This creates a **Virtual DOM object**.
+
+---
+
+## ❓ Q2: Why must JSX have a single parent element?
+
+**Answer:**
+Because JSX compiles into a single JavaScript object. Multiple root elements would return multiple objects, which is invalid.
+
+✔ Solution:
+
+```jsx
+<>
+  <h1>Hello</h1>
+  <p>World</p>
+</>
+```
+
+---
+
+## ❓ Q3: Is JSX mandatory in React?
+
+**Answer:**
+No. You can use `React.createElement`, but JSX improves readability and developer experience.
+
+---
+
+# 🔥 2. Components, Props, State
+
+## ❓ Q4: What is the difference between props and state?
+
+**Answer:**
+
+| Props              | State                    |
+| ------------------ | ------------------------ |
+| Read-only          | Mutable                  |
+| Passed from parent | Managed inside component |
+| Immutable          | Can change over time     |
+
+
+## ❓ Q5: What is prop drilling and how to avoid it?
+
+**Answer:**
+Passing props through multiple levels unnecessarily.
+
+✔ Solutions:
+
+* Context API
+* State management (Redux, Zustand)
+
+
+## ❓ Q6: Why should state not be mutated directly?
+
+**Answer:**
+React uses **shallow comparison** to detect changes.
+
+❌ Wrong:
+
+```js
+state.count = 5;
+```
+
+✔ Correct:
+
+```js
+setCount(5);
+```
+
+👉 Direct mutation may not trigger re-render.
+
+
+## ❓ Q7: What is lifting state up?
+
+**Answer:**
+Moving state to the **closest common parent** so multiple components can share it.
+
+
+
