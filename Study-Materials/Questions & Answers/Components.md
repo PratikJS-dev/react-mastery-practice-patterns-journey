@@ -256,6 +256,38 @@ Passing props through multiple levels → solved using Context API.
 
 ---
 
+# 🔥 3. Functional vs Class Components
+
+## ❓ Q8: Why are functional components faster?
+
+**Answer:**
+
+* Less overhead (no class instance)
+* Simpler memory usage
+* Better optimization with hooks
+
+
+## ❓ Q9: Can functional components replace all class features?
+
+**Answer:**
+Yes, using hooks:
+
+* State → `useState`
+* Lifecycle → `useEffect`
+* Context → `useContext`
+
+
+## ❓ Q10: What are the drawbacks of class components?
+
+**Answer:**
+
+* Verbose syntax
+* `this` confusion
+* Harder to reuse logic
+* Lifecycle duplication
+
+---
+
 # 🔹 Pro Interview Tip 💡
 
 If interviewer asks:
