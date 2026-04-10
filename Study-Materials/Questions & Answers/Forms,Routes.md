@@ -183,8 +183,6 @@ const { id } = useParams();
 </Route>
 ```
 
----
-
 ### ❓ What is protected routing?
 
 ```jsx
@@ -192,8 +190,6 @@ function PrivateRoute({ children }) {
   return isAuth ? children : <Navigate to="/login" />;
 }
 ```
-
----
 
 ### ❓ What is lazy loading in routing?
 
