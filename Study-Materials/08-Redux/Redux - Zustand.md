@@ -17,7 +17,6 @@ When app becomes big:
 * state becomes hard to manage
 * multiple components need same data
 
----
 
 # 🧩 2. Why do we need Redux / Zustand?
 
