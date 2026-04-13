@@ -4,8 +4,6 @@ Redux Toolkit is the **modern and recommended way to use Redux**.
 
 👉 It removes most of Redux’s complex boilerplate and makes Redux **easy, fast, and clean**.
 
----
-
 # 💡 First: Why Redux Toolkit?
 
 Old Redux problems:
@@ -16,8 +14,6 @@ Old Redux problems:
 * Hard for beginners
 
 👉 Redux Toolkit solves this.
-
----
 
 # ⚡ Simple Meaning
 
