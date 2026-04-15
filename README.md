@@ -1,5 +1,5 @@
 # ⚛️ React Practice & Patterns
-
+ ---
 🚀 Consistent daily progress with real-world implementations
 
 ---
