@@ -2,8 +2,6 @@
  ---
 🚀 Consistent daily progress with real-world implementations
 
----
-
 ## 📌 Overview
 
 This repository is dedicated to mastering React through hands-on practice and real-world examples.
